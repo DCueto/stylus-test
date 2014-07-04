@@ -7,6 +7,7 @@ vendor-prefixes = o ms moz webkit official
 body
 	background blue
 
+//No funciona el hover
 .btn
 	background red
 	border 1px solid orange
@@ -14,13 +15,16 @@ body
 	border-radius 5px
 	text-transform uppercase
 	transition 1s background
-
+	&:hover
+		background green
 	&.yellow
 		background yellow
 		color black
+		&:hover
+			background orange
 
-.padre
+.padre		
 	background linear-gradient(top, white, black)
 	padding 200px
-	.hijo
+	.hijo	
 		font-size 100px
